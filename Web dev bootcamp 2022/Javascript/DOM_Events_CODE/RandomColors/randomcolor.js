@@ -13,3 +13,11 @@ const makeRandColor = () => {
   const b = Math.floor(Math.random() * 255);
   return `rgb(${r},${g},${b})`;
 };
+
+const buttons = document.querySelector('button')
+
+for(let button of buttons){
+  button.addEventListener('click', function() {
+    console.log("CLICKED!")
+  })
+}
